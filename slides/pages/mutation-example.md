@@ -1,4 +1,4 @@
-# Example of a Mutation Test
+# Manual Mutation Testing
 
 <section class="grid grid-cols-2 pt-30">
 <div>
@@ -52,7 +52,7 @@ public bool IsOldEnoughToDrink(int age)
 
 <v-switch at="0" class="text-center pt-2"> 
   <template #1>  
-    We have 100% statement coverage
+    Our code 100% statement coverage
   </template>
   <template #2>  
     Did we cover all possible conditions?

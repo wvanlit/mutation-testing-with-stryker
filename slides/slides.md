@@ -4,6 +4,7 @@ layout: intro
 hideInToc: true
 mdc: true
 canvasWidth: 1080
+colorSchema: light
 
 fonts:
   sans: "Poppins, Montserrat"
@@ -21,23 +22,79 @@ hideInToc: true
 # Agenda
 
 <Toc />
+---
+layout: quote
+hideInToc: true
+---
+
+## First, some (possibly) controversial opinions
+
+---
+layout: quote
+hideInToc: true
+---
+
+## 1. Writing tests is easy
+<br>
+
+<v-clicks every="2">
+
+## 2. Knowing what to test is hard
+<br>
+
+## 3. Preventing regressions is even harder
+<br>
+
+## 4. Code coverage is a bad metric for test quality
+
+</v-clicks>
+
 
 ---
 
-# What is Mutation Testing?
+# Introducing Mutation Testing
+
+
+- What if we could test our tests?
+
+<v-clicks>
+
+- Mutation testing evaluates the quality of your test suite
+- Try to break your code and see if your tests catch it
+  - If your tests fail, they cover the mutation
+  - If your tests pass, add more tests 
+
+</v-clicks>
+
 
 ---
+src: ./pages/mutation-example.md
+---
 
-# Why Mutation Testing?
+---
+hideInToc: true
+---
+
+<br><br><br><br> 
+
+## Manual Mutation Testing is tedious
+
+<br>
+
+## We can do better!
+
+![GIF](https://miro.medium.com/v2/1*zTycj5PEmgDK-Ce6gBQo_Q.gif){width=350 position=absolute right=20 bottom=20}
 
 ---
 
 # Introduction to Stryker
 
 
-<v-clicks>
 
 - Open-source mutation testing tool
+
+<v-clicks>
+
 - Runs using your existing test suite
 - Supports multiple languages
   - JavaScript / TypeScript
@@ -52,9 +109,27 @@ hideInToc: true
 
 ---
 
-# What can Stryker do?
+# What does Stryker do?
 
-<v-clicks>
+1. Reads your code
+1. Decides possible mutations
+
+<v-clicks every="2">
+
+3. Applies mutations
+1. Runs your tests
+1. Checks if tests fail
+1. Reports results
+
+</v-clicks>
+
+TODO: Add screenshot of report
+
+---
+
+# Mutation Types
+
+<v-clicks every="2">
 
 | **Mutation Type** | **Description** |
 | --- | --- |
@@ -70,50 +145,16 @@ hideInToc: true
 ---
 src: ./pages/possible-mutations.md
 ---
----
-src: ./pages/mutation-example.md
----
-
----
-layout: columns
----
-
-# Configuring Stryker in your project
-
-::left::
-
-TypeScript
-
-```json
-{
-}
-```
-
-::right::
-
-C#
-
-```json
-{
-}
-``` 
-
-::after::
-
-<div class="text-center mt-10">
-
-`incremental` and `baseline` both allow you to run only the tests that are affected by the changes.
-
-</div>
 
 ---
 
-# Live Demo
+# Live Demo 
+You can try this at home!
 
-Clone the example repo
+Clone the example repo (or just download the code)
 
 ```sh
-git clone TODO ADD REPO
+git clone https://github.com/wvanlit/mutation-testing-with-stryker.git
 ```
 
 TypeScript
