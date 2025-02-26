@@ -23,14 +23,14 @@ hideInToc: true
 
 <Toc />
 ---
-layout: quote
+layout: center
 hideInToc: true
 ---
 
 ## First, some (possibly) controversial opinions
 
 ---
-layout: quote
+layout: center
 hideInToc: true
 ---
 
@@ -176,3 +176,31 @@ dotnet restore
 # Run mutation testing
 dotnet stryker
 ```
+
+---
+hideInToc: true
+---
+
+# Conclusion
+
+- Mutation testing is a powerful tool
+- Helps you write better tests
+- Can be integrated into your CI/CD pipeline
+- Stryker is a great tool to get started
+
+<v-click>
+
+But remember...
+
+- Mutation testing is not a silver bullet
+- It's not a replacement for good testing practices
+
+</v-click>
+
+---
+layout: center
+hideInToc: true
+---
+
+# Questions?
+Ask!

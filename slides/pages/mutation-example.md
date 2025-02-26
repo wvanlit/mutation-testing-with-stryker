@@ -58,12 +58,12 @@ public bool IsOldEnoughToDrink(int age)
     Did we cover all possible conditions?
   </template>
   <template #3> 
-    Stryker will mutate <code>>=</code> to <code>></code>
+    We change <code>>=</code> to <code>></code>
   </template>
   <template #4> 
-      <Warning name="No failures ➞ the mutation survived our tests" class="w-sm mx-auto" />
+      <Warning name="No failures ➞ our tests are not complete" class="w-sm mx-auto" />
   </template>
   <template #5>  
-    We add a test to kill the mutation
+    We add an extra test to catch the mutation
   </template>
 </v-switch>
