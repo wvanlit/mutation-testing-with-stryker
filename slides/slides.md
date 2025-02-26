@@ -123,7 +123,7 @@ hideInToc: true
 
 </v-clicks>
 
-TODO: Add screenshot of report
+![Report](./assets/report.png){width=650 position=absolute right=5 bottom=20}
 
 ---
 
