@@ -2,7 +2,7 @@
 
 ```bash
 # Install dependencies
-dotnet restore
+dotnet tool restore
 
 # Run mutation testing
 dotnet stryker
